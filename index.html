@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feel-Less</title>
+</head>
+<style>
+  img {
+    max-width: 100%;
+  }
+  .beach-background
+  {
+    background-image: url("img/backgrounds/beach angle 2.png");
+  }
+  .page-title
+  {
+    text-align: right; 
+    text-decoration: underline;
+    text-decoration-color: white;
+    font-size:3rem; 
+    text-transform: uppercase;
+    font-style:italic; 
+    font-weight:bold; 
+    background:linear-gradient(yellow,orange);
+    color: transparent;
+    background-clip:text; 
+  }
+  .name-text
+  {
+    font-size:2rem; 
+    color:white; 
+  }
+  .level-label
+  {
+    font-size:2rem; 
+    color:yellow;  
+    text-decoration: underline solid 0.125em;
+    text-decoration-color: white; 
+  }
+  .character-display
+  {
+    text-align: center;
+    display: flex;
+    align-items: top;
+    justify-content: left;
+  }
+  .pink-drop-shadow
+  {
+     filter: drop-shadow(10px 10px 7px #ECA6F5);
+  }
+
+</style>
+<body class="beach-background">
+  <div>
+    <p class="page-title">Current Party</p>
+    <div id="character-one" class="character-display">
+   
+      <img id="character-one-image" class="character-image">   
+      <div id="character-one-label">
+        <p id="character-one-name" class="name-text"></p>
+        <p id="character-one-level" class="level-label"></p>
+      </div>  
+    </div>
+  </div>
+  <script>
+
+    const imagesToCharacter = {Tsumiki:{name:"tsumiki",fullPic:"tsumiki 1a.png",level:2,filter:"pink-drop-shadow"}}
+    const currentPartyLeader = "Tsumiki"; 
+    const tsumikiCurrentLevel = 2; 
+
+    const leaderImage = document.querySelector("#character-one-image");
+    leaderImage.src = "img/characters/" + currentPartyLeader + "/" + imagesToCharacter[currentPartyLeader]["fullPic"];
+    leaderImage.classList.add(imagesToCharacter[currentPartyLeader]["filter"]) ;
+
+    const leaderNameLabel = document.querySelector("#character-one-name"); 
+    leaderNameLabel.textContent = currentPartyLeader; 
+
+    const leaderLevelLabel = document.querySelector("#character-one-level"); 
+    leaderLevelLabel.textContent = "LVL" + imagesToCharacter[currentPartyLeader]["level"] ;
+
+  </script>
+</body>
+</html>
