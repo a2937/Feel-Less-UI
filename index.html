@@ -1,72 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8">  
+  <link rel="stylesheet" href="./styles.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Feel-Less</title>
 </head>
-<style>
-  @font-face
-  {
-    font-family: Surf;
-    src: url(./fonts/surfquestexpandsemital.ttf);
-  }
-   @font-face
-  {
-    font-family: Cutie;
-    src: url(./fonts/CutiePatootie.ttf);
-  }
-
-  img {
-    max-width: 100%;
-  }
-  .beach-background
-  {
-    background-image: url("img/backgrounds/beach angle 2.png");
-  }
-  .page-title
-  {
-    text-align: right; 
-    text-decoration: underline;
-    text-decoration-color: white;
-    font-size:4.5rem; 
-    text-transform: uppercase;
-    font-style:italic; 
-    font-weight:bold; 
-    background:linear-gradient(yellow,orange);
-    color: transparent;
-    background-clip:text; 
-    font-family: Surf;
-    padding-right: 2rem;
-  }
-  .name-text
-  {
-    font-size:3rem; 
-    color:white; 
-    font-family: Cutie;
-  }
-  .level-label
-  {
-    font-size:3rem; 
-    color:yellow;  
-    text-decoration: underline solid 0.125em;
-    text-decoration-color: white; 
-    font-family: Cutie;
-  }
-  .character-display
-  {
-    text-align: center;
-    display: flex;
-    align-items: top;
-    justify-content: left;
-  }
-  .pink-drop-shadow
-  {
-     filter: drop-shadow(10px 10px 7px #ECA6F5);
-  }
-
-</style>
-<body class="beach-background">
+<body class="beach-night-background">
   <div>
     <p class="page-title">Current Party</p>
     <div id="character-one" class="character-display">
@@ -75,6 +15,29 @@
       <div id="character-one-label">
         <p id="character-one-name" class="name-text"></p>
         <p id="character-one-level" class="level-label"></p>
+      </div>  
+    </div>
+
+    <div id="character-two" class="character-display">
+      <img id="character-two-image" class="character-image">   
+      <div id="character-two-label">
+        <p id="character-two-name" class="name-text"></p>
+        <p id="character-two-level" class="level-label"></p>
+      </div>  
+    </div>
+
+    <div id="character-three" class="character-display">
+      <img id="character-three-image" class="character-image">   
+      <div id="character-three-label">
+        <p id="character-three-name" class="name-text"></p>
+        <p id="character-three-level" class="level-label"></p>
+      </div>  
+    </div>
+     <div id="character-four" class="character-display">
+      <img id="character-four-image" class="character-image">   
+      <div id="character-four-label">
+        <p id="character-four-name" class="name-text"></p>
+        <p id="character-four-level" class="level-label"></p>
       </div>  
     </div>
   </div>

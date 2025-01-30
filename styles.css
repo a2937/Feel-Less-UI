@@ -1,0 +1,62 @@
+ @font-face
+  {
+    font-family: Surf;
+    src: url(./fonts/surfquestexpandsemital.ttf);
+  }
+   @font-face
+  {
+    font-family: Cutie;
+    src: url(./fonts/CutiePatootie.ttf);
+  }
+
+  img {
+    max-width: 100%;
+  }
+  .beach-night-background
+  {
+    background-image: url("img/backgrounds/beach angle 2.png");
+  }
+  .next-to-beach-background
+  {
+    background-image: url("img/backgrounds/next to the beach.png");
+  }
+
+  .page-title
+  {
+    text-align: right; 
+    text-decoration: underline;
+    text-decoration-color: white;
+    font-size:4.5rem; 
+    text-transform: uppercase;
+    font-style:italic; 
+    font-weight:bold; 
+    background:linear-gradient(yellow,orange);
+    color: transparent;
+    background-clip:text; 
+    font-family: Surf;
+    padding-right: 2rem;
+  }
+  .name-text
+  {
+    font-size:3rem; 
+    color:white; 
+    font-family: Cutie;
+  }
+  .level-label
+  {
+    font-size:3rem; 
+    color:yellow;  
+    text-decoration: underline solid 0.125em;
+    text-decoration-color: white; 
+    font-family: Cutie;
+  }
+  .character-display
+  {
+    text-align: center;
+    display: flex;
+    justify-content: left;
+  }
+  .pink-drop-shadow
+  {
+     filter: drop-shadow(10px 10px 7px #ECA6F5);
+  }
