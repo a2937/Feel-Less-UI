@@ -3,38 +3,57 @@
   <meta charset="UTF-8">
   <link rel="stylesheet" href="styles.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Friends</title>
 </head>
 <body>
   <body class="next-to-beach-background">
   <div>
     <p class="page-title">Social Network</p>
-    <div id="grid">
+    <div id="grid" class="grid-container">
       <div id="row-one">
-        <div id="friend-one">
-
+        <div id="friend-one" class="friendCard">
+          <img id="friend-one-image">
+          </img>
+          <p id="friend-one-desc">
+          </p>
         </div>
-        <div id="friend-two">
+        <div id="friend-two" class="friendCard">
 
         </div>
       </div>
       <div id="row-two">
-        <div id="friend-three">
+        <div id="friend-three" class="friendCard">
 
         </div>
-        <div id="friend-four">
+        <div id="friend-four" class="friendCard">
 
         </div>
       </div>
         <div id="row-three">
-          <div id="friend-five">
+          <div id="friend-five" class="friendCard">
 
         </div>
-        <div id="friend-six">
+        <div id="friend-six" class="friendCard">
 
         </div>
       </div>
     </div>
   </div>
+   <script>
+    const Avalon = {name:"Avalon",desc:"Personfication of the computer the game is install in. Has killed you before.",closeness:"Acquaintances",face:"av.png"}; 
+    const Anthy = {name:"Anthy", desc:"Hitman sent after you, been doing her best since",closeness:"Friends"};
+    const HometownFriends = {name:"Hometown Friends",desc:"The friends you made before mvoing out,always a phonecall away.",closeness:"Unbreakable bond"}
+    const Angie = {name:"Angela 'Angie' Cereza",desc:"Kind girl met at the beach. Slow on the uptake, but well-menaing. Passionate about Fashion and Literature. Feels self-concious about her Special Talent",closeness:"Friend"}
+    const Anna = {name:"Anna Tanohiro",desc:"A local hero,always doing her best to help those who need it",closeness:"Someoone who you can rely on."}
+    const Reddy = {name:"[REDACTED] Hernandez",desc:"A hacker and roboticist"}
+
+    const friendOneImage = document.getElementById("friend-one-image"); 
+    friendOneImage.src = "./img/faces/" + Avalon.face; 
+    friendOneImage.alt = Avalon.desc; 
+
+    const friendOneDesc = document.getElementById("friend-one-desc")
+    friendOneDesc.innerHTML = "<span class='label'>Name:</span>" + Avalon.name + '&#10;&#13;' + "<span class='label'>Short Desc:</span>" + Avalon.desc + "&#10;&#13;" + "<span class='label'>Closeness:</span>" + Avalon.closeness; 
+
+   </script>
 </body>
 </html>

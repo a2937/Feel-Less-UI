@@ -1,3 +1,5 @@
+
+ 
  @font-face
   {
     font-family: Surf;
@@ -60,3 +62,20 @@
   {
      filter: drop-shadow(10px 10px 7px #ECA6F5);
   }
+
+ .grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+.friendCard
+{
+  display:inline-flex; 
+  white-space: pre-line; 
+  color:white; 
+  font-size:1.5rem; 
+}
+.label
+{
+  color:yellow; 
+}
