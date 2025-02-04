@@ -48,7 +48,7 @@
     const tsumikiCurrentLevel = 2; 
 
     const leaderImage = document.querySelector("#character-one-image");
-    leaderImage.src = "img/characters/" + currentPartyLeader + "/" + imagesToCharacter[currentPartyLeader]["fullPic"];
+    leaderImage.src = "img/characters/" + currentPartyLeader.toLowerCase() + "/" + imagesToCharacter[currentPartyLeader]["fullPic"];
     leaderImage.alt = currentPartyLeader; 
     leaderImage.classList.add(imagesToCharacter[currentPartyLeader]["filter"]) ;
 
