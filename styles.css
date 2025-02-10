@@ -11,6 +11,12 @@
     src: url(./fonts/CutiePatootie.ttf);
   }
 
+  @font-face
+  {
+    font-family: Page;
+    src:url("./fonts/emptypageDEMO.otf")
+  }
+
   img {
     max-width: 100%;
   }
@@ -78,4 +84,5 @@
 .label
 {
   color:yellow; 
+  font-family: Page;
 }
